@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UdR-F5-8iU">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Game-->
+        <scene sceneID="ToY-ds-q2I">
+            <objects>
+                <viewController id="0Gk-XP-ucY" customClass="GameViewController" customModule="FlabbyBurrd" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="EcC-Y1-7Ai" customClass="SKView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="3UL-6X-aEk">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="feA-Ma-l01">
+                                <rect key="frame" x="67.5" y="20" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="BnB-5l-AY9"/>
+                                    <constraint firstAttribute="width" constant="240" id="IqC-jJ-a5N"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pwA-uG-nMf">
+                                <rect key="frame" x="16" y="519" width="343" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="238-Wg-q00"/>
+                                    <constraint firstAttribute="height" constant="65" id="9BV-Vz-EKn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="34"/>
+                                <state key="normal" title="Play">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="loadGameButton:" destination="0Gk-XP-ucY" eventType="touchUpInside" id="pbJ-k9-vpY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Qqe-Eg-gHT"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Qqe-Eg-gHT" firstAttribute="trailing" secondItem="3UL-6X-aEk" secondAttribute="trailing" id="7vc-1h-Z78"/>
+                            <constraint firstItem="3UL-6X-aEk" firstAttribute="top" secondItem="Qqe-Eg-gHT" secondAttribute="top" id="F6k-CW-zSx"/>
+                            <constraint firstItem="feA-Ma-l01" firstAttribute="top" secondItem="Qqe-Eg-gHT" secondAttribute="top" constant="20" id="GTj-Cz-tZl"/>
+                            <constraint firstItem="3UL-6X-aEk" firstAttribute="leading" secondItem="Qqe-Eg-gHT" secondAttribute="leading" id="Ieb-m8-Zec"/>
+                            <constraint firstItem="Qqe-Eg-gHT" firstAttribute="bottom" secondItem="3UL-6X-aEk" secondAttribute="bottom" id="XME-jZ-waP"/>
+                            <constraint firstItem="pwA-uG-nMf" firstAttribute="bottom" secondItem="Qqe-Eg-gHT" secondAttribute="bottom" id="bPk-gA-fR7"/>
+                            <constraint firstItem="feA-Ma-l01" firstAttribute="centerX" secondItem="EcC-Y1-7Ai" secondAttribute="centerX" id="ipd-av-UiA"/>
+                            <constraint firstItem="Qqe-Eg-gHT" firstAttribute="trailing" secondItem="pwA-uG-nMf" secondAttribute="trailing" constant="16" id="jQU-Wi-jG8"/>
+                            <constraint firstItem="pwA-uG-nMf" firstAttribute="leading" secondItem="Qqe-Eg-gHT" secondAttribute="leading" constant="16" id="xoj-YS-0Ei"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Game" image="paperplane" catalog="system" id="xCA-hD-n5p"/>
+                    <connections>
+                        <outlet property="flappyBurrdSign" destination="feA-Ma-l01" id="acc-DZ-dKB"/>
+                        <outlet property="pushToPlay" destination="pwA-uG-nMf" id="3UQ-Ek-z7j"/>
+                        <outlet property="setBackImage" destination="3UL-6X-aEk" id="rVt-H4-qgx"/>
+                        <outlet property="view" destination="3UL-6X-aEk" id="KLC-i3-jId"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dhz-8S-9TD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="561" y="70"/>
+        </scene>
+        <!--High Scores-->
+        <scene sceneID="Ece-Tj-c0c">
+            <objects>
+                <tableViewController id="e8j-T4-rbY" customClass="HighScoreTableViewController" customModule="FlabbyBurrd" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="XSM-s7-TK7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="High Scores" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fCL-hH-blj">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" name="AccentColor"/>
+                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="34"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <color key="shadowColor" systemColor="opaqueSeparatorColor"/>
+                        </label>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="highScoreCell" id="etS-Rz-uKJ" customClass="HighScoreTableViewCell" customModule="FlabbyBurrd" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="72" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="etS-Rz-uKJ" id="7dA-B7-U3C">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NtQ-Db-miM">
+                                            <rect key="frame" x="163" y="11" width="42" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <rect key="contentStretch" x="0.0" y="0.0" width="0.55000000000000004" height="1"/>
+                                </tableViewCellContentView>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="0.55000000000000004" height="1"/>
+                                <connections>
+                                    <outlet property="scoreLabel" destination="NtQ-Db-miM" id="ALg-Tz-JjC"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="e8j-T4-rbY" id="82k-e1-a3P"/>
+                            <outlet property="delegate" destination="e8j-T4-rbY" id="3eK-Vp-dg3"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="High Scores" image="lineweight" catalog="system" id="7au-X8-K7b"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1t7-bt-RKz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="318" y="-727"/>
+        </scene>
+        <!--Flappy Bird Tab Bar Controller-->
+        <scene sceneID="KIi-OG-f1s">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1lJ-SQ-SNN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tabBarController id="UdR-F5-8iU" customClass="FlappyBirdTabBarController" customModule="FlabbyBurrd" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="LEA-VS-wdd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="0Gk-XP-ucY" kind="relationship" relationship="viewControllers" id="13T-yY-RMr"/>
+                        <segue destination="e8j-T4-rbY" kind="relationship" relationship="viewControllers" id="O2I-rY-nbC"/>
+                        <segue destination="7QW-F5-j94" kind="relationship" relationship="viewControllers" id="D8X-eg-WLU"/>
+                    </connections>
+                </tabBarController>
+            </objects>
+            <point key="canvasLocation" x="2183" y="-873"/>
+        </scene>
+        <!--Select Character-->
+        <scene sceneID="nvJ-nh-K7M">
+            <objects>
+                <viewController id="7QW-F5-j94" customClass="SelectCharViewController" customModule="FlabbyBurrd" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3G4-sL-pBO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="2uX-Ah-kTX">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yK1-hh-RNI">
+                                <rect key="frame" x="114" y="90" width="147" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="23"/>
+                                <state key="normal" title="Day">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="dayShiftWith_sender:" destination="7QW-F5-j94" eventType="touchUpInside" id="H3a-VO-P3p"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SELECT MODE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w1p-O3-kCL">
+                                <rect key="frame" x="16" y="20" width="343" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="33"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2oi-Z4-drU">
+                                <rect key="frame" x="114" y="247" width="147" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="23"/>
+                                <state key="normal" title="Night">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="nightShiftWith_sender:" destination="7QW-F5-j94" eventType="touchUpInside" id="HGb-hH-MB1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="doS-nF-F37"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Select Character" image="pencil" catalog="system" id="3Ot-bx-Zil"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vmg-KX-6RF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2008.8" y="135.38230884557723"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="360" height="640"/>
+        <image name="lineweight" catalog="system" width="128" height="110"/>
+        <image name="logo" width="240" height="128"/>
+        <image name="paperplane" catalog="system" width="128" height="118"/>
+        <image name="pencil" catalog="system" width="128" height="113"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

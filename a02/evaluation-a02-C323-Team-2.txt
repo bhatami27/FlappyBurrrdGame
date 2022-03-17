@@ -1,0 +1,27 @@
+Dylan Taylor (dydtaylo@iu.edu), Javier Jimenez (jimenjav@iu.edu), Bryan 
+Hatami (bhatami@iu.edu), Zach Kilmer (zkilmer@iu.edu)
+Flappy Burrd (team 2)
+April 27, 2021
+
+
+Assignment01 Evaluation:
+
+Our Assignment01 submission met the following requirements:
+	1. Follows the MVC Pattern
+	2. Incorporated all required UI elements
+	3. Make substantial use of:
+		. SpriteKit (the basis of the game)
+		. CoreData (used to persist user scores)
+
+Upon reviewing our design documents from Assignment01, it appears we were mostly correct in our expectations of our app, but some things were wrong.
+In particular, we did not foresee that the game screen and home screen would be simpler to implement as a single view with SpriteKit. Consequently, we
+needed to make another view to meet project requirements. The new view (and funcationality!) we decided to implement was a screen for selecting your
+character. Previously, you could only play as the default character, now we will let the user choose how they want to look in game. Despite this fairly significant
+change, the bulk of our design documents are still accurate and have been implemented (to the extent required) as planned.
+
+App Evaluation:
+
+Our app is well under way. The core features are in place and mostly functional. The game can be played and all necessary views can be accessed, although
+they don't all work. The high score screen is in place, but the UI needs a little polishing and use of CoreData needs to be finalized. Our character selection
+screen is accessable has all necessary UI elements (although, once again, not entirely functional yet). This implementation has largely followed the design
+we set out with from Assignment01 and we have met all necessary requirements for Assignment02.

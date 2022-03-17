@@ -1,0 +1,11 @@
+C323 / Spring 2021: Final Project
+
+Dylan Taylor (dydtaylo@iu.edu), Javier Jimenez (jimenjav@iu.edu), Bryan 
+Hatami (bhatami@iu.edu), Zach Kilmer (zkilmer@iu.edu)
+Flappy Burrd (team 2)
+
+TEAMMEMBER'S RESPONSIBILITY
+Dylan Taylor: Tab Bar Controller, High Score Table View, CoreData
+Bryan Hatami: GameScene - SpriteKit, Day/Night Selection
+Zach Kilmer: CoreData
+Javier Jimenez: CoreData, Day/Night Selection

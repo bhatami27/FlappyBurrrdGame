@@ -1,0 +1,52 @@
+Dylan Taylor (dydtaylo@iu.edu), Javier Jimenez (jimenjav@iu.edu), Bryan Hatami (bhatami@iu.edu), Zach Kilmer (zkilmer@iu.edu)
+C323 Assignment 1
+Flappy Burrd
+04/20/2021
+
+Our team will adhere to the following timeline and grading rubric
+
+Proposed Timeline:
+	. Tuesday April 20: All components of assignment 1 will be submitted to the github repo created for us.
+		. This includes five design documents along with this team contract
+		
+	. Tuesday April 27: The state of the app will be as follows:
+		. The app will run without crashing
+		. All user interface elements as displayed on our design documents will be implemented, although not entirely functional
+		. All functionalities as described in our design documents will be present, although not entirely functional
+		. One of the main functionalities described in our documents will be completely functional
+			. For example: Our high score screen will likely be done by this point
+		. We will have completed, and submitted, a draft of our team's presentation videos and/or presentations to the UIs
+	
+	. Tuesday May 04: 
+		. Our apps will be complete as described on our original design documents
+			. This includes all UI and functionality
+		. Our individual presentation videos and/or presentations to the UIs will will be complete
+
+Grading Rubric:
+	. Tuesday April 20, A01:
+		90%: Five Design Documents
+			. 18%: Project Description
+			. 18%: UML Use Case Diagram
+			. 18%: UML Class Diagram
+			. 18%: UML Activity Diagram
+			. 18%: UI Wireframe diagram
+		10%: Team Contract
+	
+	. Tuesday April 27, A02:
+		15% : Home Screen UI present, though not entirely functional
+		15% : Game Screen UI present, though not entirely functional
+		15% : High Score Screen UI present, though not entirely functional
+		20% : Game screen gameplay present, though not entirely functional
+		20% : High score functionality present, entirely functional
+		15% : Presentation draft
+		
+	. Tuesday May 04, A03:
+		15% : Home Screen UI present and entirely functional
+		15% : Game Screen UI present and entirely functional
+		15% : High Score Screen UI present and entirely functional
+		20% : Game screen gameplay present and entirely functional
+		20% : High score functionality present and entirely functional
+		15% : Presentation video completed or presented to UIs
+		
+		
+		
